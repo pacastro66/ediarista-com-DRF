@@ -4,7 +4,13 @@
 {% block content%}
 <div class="card card-primary">
     <div class="card-header">
-        <div class="card-title">Cadastro de Usuários</div>
+        <div class="card-title">
+            {% if request.resolver_match.url_name == 'cadastrar_usuario' %}
+                Cadastro de Usuários
+            {% else %} 
+                Edição de Usuários
+            {% endif %}
+            </div>
     </div>
         <div class="card-body">
             <form method="POST">
