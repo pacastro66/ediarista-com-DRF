@@ -82,8 +82,8 @@ DATABASES = {
         'NAME': 'ediaristas',
         'HOST': 'localhost',
         'PORT': 3306,
-        'USER':'root',
-        'PASSWORD':'Kadesh2022'
+        'USER':'Paulo',
+        'PASSWORD':'w54uBo'
 
     }
 }
