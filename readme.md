@@ -2,6 +2,17 @@
 
 ### Instalando o projeto
 
+### Para remover o link do projeto 
+`git remote remove origin`
+
+## para criar novo link com o projeto
+`git remote add origin https://github.com/pacastro66/ediarista-com-DRF  **exemplo**`
+##para renomear o projeto
+`git branch -M main`
+`git push -u origin main`
+
+
+
 ### Clonar o projeto dentro de uma pasta
 `git clone https://github.com/pacastro66/ediaristas1`
 
