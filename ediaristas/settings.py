@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'adminlte3',
     'bootstrap4',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -82,8 +83,8 @@ DATABASES = {
         'NAME': 'ediaristas',
         'HOST': 'localhost',
         'PORT': 3306,
-        'USER':'Paulo',
-        'PASSWORD':'w54uBo'
+        'USER':'root',
+        'PASSWORD':'Kadesh2022'
 
     }
 }
