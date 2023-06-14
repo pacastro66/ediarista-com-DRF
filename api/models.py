@@ -25,17 +25,17 @@ class Usuario(AbstractUser):
         (2,"Diarista")
                       )
 
-    nome_completo =models.CharField(max_length=255,null=False,blank=False)
-    cpf =BRCPFField(null=False,unique=True)
-    nascimento =models.EmailField(null=False,blank=False)
+    nome_completo =models.CharField(max_length=255,null=True,blank=False)
+    cpf =BRCPFField(null=True,unique=True,blank=False)
+    nascimento =models.EmailField(null=True,blank=False)
     email = models.EmailField(null=False,blank=False,unique=True)
-    telefone = models.CharField(max_length=11,null=False,blank=False)
-    tipo_usuario =models.IntegerField(choices=TIPO_USUARIO_CHOICES,null=False,blank=False)
-    reputacao = models.FloatField(null=False,blank=False,default=5)
+    telefone = models.CharField(max_length=11,null=True,blank=False)
+    tipo_usuario =models.IntegerField(choices=TIPO_USUARIO_CHOICES,null=True,blank=False)
+    reputacao = models.FloatField(null=True,blank=False,default=5)
     chave_pix = models.CharField(null=True,blank=True,max_length=255)
-    foto_documento=models.ImageField(null=False,upload_to=nome_arquivo_foto,
+    foto_documento=models.ImageField(null=True,upload_to=nome_arquivo_foto,
     validators=[validate_image_file_extension,])
-    foto_usuario =models.ImageField(null=False,upload_to=nome_arquivo_documento,
+    foto_usuario =models.ImageField(null=True,upload_to=nome_arquivo_documento,
     validators=[validate_image_file_extension,])
 
 
